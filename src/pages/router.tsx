@@ -6,8 +6,8 @@ import {
 import { HomePage } from './home/home.page';
 import { ErrorPage } from './errors/error.page';
 import { NotFoundPage } from './errors/not-found.page';
-import { StudentForm } from '../components/forms/student.form';
 import AppLayout from './app.layout';
+import { StudentFormPage } from './student-form/student-form.page';
 
 export const router = () => {
   return createBrowserRouter(
@@ -16,7 +16,7 @@ export const router = () => {
         <Route index element={<HomePage />} errorElement={<ErrorPage />} />
         <Route
           path='student-form'
-          element={<StudentForm />}
+          element={<StudentFormPage />}
           errorElement={<ErrorPage />}
         />
         <Route path='*' element={<NotFoundPage />} />
