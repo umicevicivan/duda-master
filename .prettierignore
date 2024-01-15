@@ -1,0 +1,12 @@
+# Add files here to ignore them from prettier formatting
+
+/.github
+/.husky
+/.vs
+/.build
+/cloud
+/node_modules
+**/*.json
+/*.yml
+/*.md
+/coverage
